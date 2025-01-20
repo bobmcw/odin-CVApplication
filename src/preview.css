@@ -1,0 +1,4 @@
+header > .headerItems{
+    display: flex;
+    flex-direction: row;
+}
