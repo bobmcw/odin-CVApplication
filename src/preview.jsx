@@ -1,4 +1,6 @@
 import './preview.css'
+import './cvItem'
+import CvItem from './cvItem';
 function Preview(){
     return(
         <div className="preview">
@@ -12,6 +14,7 @@ function Preview(){
         </header>
         <div className="previewBody">
             <h2>Education</h2>
+            <CvItem schoolName="PJATK" startDate="01.10.2024" endDate="present" degree="Computer Science" locationN="Warsaw" />
             <h2>Experience</h2>
         </div>
         </div>

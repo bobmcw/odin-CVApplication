@@ -1,0 +1,12 @@
+.left,.right{
+    display: flex;
+    flex-direction: column;
+}
+.cvItem{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.right > :first-child{
+    font-weight: bold;
+}
