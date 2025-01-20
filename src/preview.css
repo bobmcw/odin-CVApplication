@@ -1,4 +1,22 @@
+.preview{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
+header{
+    background-color: #0B2545;
+}
+h1,.headerItems{
+    color: #eef4ed
+}
 header > .headerItems{
     display: flex;
     flex-direction: row;
+}
+.previewBody{
+    padding: 5%;
+}
+.previewBody > h2{
+    background-color: lightgray;
+    text-align: center;
 }
