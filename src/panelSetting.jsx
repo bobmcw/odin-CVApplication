@@ -1,8 +1,11 @@
+import './panelSetting.css'
 function PanelSetting({name}){
     return(
     <>
-    <input type="text" id={{name}+"Input"} />
-    <label htmlFor={{name}+"Input"}>{name}</label>
+    <div className="settingContainer">
+        <label htmlFor={name+"Input"}>{name}</label>
+        <input type="text" id={name+"Input"} />
+    </div>
     </>
     )
 }
