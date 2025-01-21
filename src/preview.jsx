@@ -15,10 +15,13 @@ function Preview(){
         <div className="previewBody">
             <h2>Education</h2>
             <div className="educationItems">
-                <CvItem schoolName="PJATK" startDate="01.10.2024" endDate="present" degree="Computer Science" locationN="Warsaw" />
-                <CvItem schoolName="PJATK" startDate="01.10.2024" endDate="present" degree="Computer Science" locationN="Warsaw" />
+                <CvItem name="PJATK" startDate="01.10.2024" endDate="present" position="Computer Science" locationN="Warsaw" />
+                <CvItem name="PJATK" startDate="01.10.2024" endDate="present" position="Computer Science" locationN="Warsaw" description="hello" />
             </div>
             <h2>Experience</h2>
+            <div className="educationItems">
+                <CvItem name="Work" startDate="01.10.2024" endDate="present" position="Junior rust programmer" locationN="Warsaw, Poland" description="lorem ipsum" />
+            </div>
         </div>
         </div>
     )

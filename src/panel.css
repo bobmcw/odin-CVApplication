@@ -1,0 +1,8 @@
+.panel{
+    border: 1px solid black;
+    padding: 8px; 
+    border-radius: 8px;
+}
+.panel > h1{
+    color: black;
+}

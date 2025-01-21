@@ -6,5 +6,18 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  gap: 5%;
+}
+.app > .preview{
+  width: 50%;
+  height: 95%;
+  align-self: center;
+  aspect-ratio: 1/1.5;
+}
+.panel{
+  height: fit-content;
+  align-self: center;
 }

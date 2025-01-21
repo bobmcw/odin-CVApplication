@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     max-width: 1000px;
+    box-shadow: -5px -5px 15px lightgray;
 }
 header{
     padding: 5px;

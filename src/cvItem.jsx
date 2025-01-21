@@ -1,5 +1,5 @@
 import './cvItem.css'
-function CvItem({schoolName, degree, startDate, endDate, locationN=""}){
+function CvItem({name, position, startDate, endDate, locationN="",description=""}){
     return(
         <div className="cvItem">
             <div className="left">
@@ -7,8 +7,9 @@ function CvItem({schoolName, degree, startDate, endDate, locationN=""}){
                 <p>{locationN}</p>
             </div>
             <div className="right">
-                <p>{schoolName}</p>
-                <p>{degree}</p>
+                <p>{name}</p>
+                <p>{position}</p>
+                {description == "" ? null : <p style={{marginTop: "5px"}}>{description}</p>}
             </div>
         </div>
     )
