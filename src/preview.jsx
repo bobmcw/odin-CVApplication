@@ -14,7 +14,10 @@ function Preview(){
         </header>
         <div className="previewBody">
             <h2>Education</h2>
-            <CvItem schoolName="PJATK" startDate="01.10.2024" endDate="present" degree="Computer Science" locationN="Warsaw" />
+            <div className="educationItems">
+                <CvItem schoolName="PJATK" startDate="01.10.2024" endDate="present" degree="Computer Science" locationN="Warsaw" />
+                <CvItem schoolName="PJATK" startDate="01.10.2024" endDate="present" degree="Computer Science" locationN="Warsaw" />
+            </div>
             <h2>Experience</h2>
         </div>
         </div>

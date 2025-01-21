@@ -24,3 +24,9 @@ header > .headerItems{
     background-color: lightgray;
     text-align: center;
 }
+.educationItems > :first-child{
+    margin-top: 20px;
+}
+.educationItems > :last-child{
+    margin-bottom: 40px;
+}
