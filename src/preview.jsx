@@ -1,11 +1,11 @@
 import './preview.css'
 import './cvItem'
 import CvItem from './cvItem';
-function Preview(){
+function Preview({fullName}){
     return(
         <div className="preview">
         <header>
-            <h1>Header</h1>
+            <h1>{fullName}</h1>
             <div className="headerItems">
                 <p>item1</p>
                 <p>item2</p>
