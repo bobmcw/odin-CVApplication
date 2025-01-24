@@ -7,3 +7,8 @@
 .panel > h1{
     color: black;
 }
+.dates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
