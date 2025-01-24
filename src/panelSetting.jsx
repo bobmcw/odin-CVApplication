@@ -2,7 +2,12 @@ import './panelSetting.css'
 function PanelSetting({name="", setValues, values}){
     const handleChange = (newVal) => {
         const newValues = {...values, [name]: newVal}
-        setValues(newValues)
+        if (setValues != null){
+            setValues(newValues)
+        }
+        else{
+            values = newValues;
+        }
     }
     return(
     <div className="settingContainer">

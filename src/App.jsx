@@ -1,6 +1,6 @@
 import Preview from './preview.jsx'
 import Panel from './panel.jsx';
-import SectionPanel from './sectionPanel.jsx';
+import EducationPanel from './educationPanel.jsx';
 import { useState } from 'react';
 import './App.css'
 function App(){
@@ -18,7 +18,7 @@ function App(){
             setValues={SetValues}
             values={values}
            />
-           <SectionPanel />
+           <EducationPanel />
         </div>
         <Preview className="preview" values={values}/>
       </div>
