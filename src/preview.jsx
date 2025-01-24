@@ -2,6 +2,8 @@ import './preview.css'
 import './cvItem'
 import CvItem from './cvItem';
 import emailIcon from './assets/email.svg'
+import phoneIcon from './assets/phone.svg'
+import locationIcon from './assets/location.svg'
 function Preview({values}){
     return(
         <div className="preview">
@@ -14,8 +16,18 @@ function Preview({values}){
                         {values["Email"]}
                     </span>
                 ) : null} </p>
-                <p>item2</p>
-                <p>item3</p>
+                <p>{values["Phone"] != "" ? (
+                    <span className='infoWithIcon'>
+                        <img src={phoneIcon}/>
+                        {values["Phone"]}
+                    </span>
+                ) : null} </p>
+                <p>{values["Location"] != "" ? (
+                    <span className='infoWithIcon'>
+                        <img src={locationIcon}/>
+                        {values["Location"]}
+                    </span>
+                ) : null} </p>
             </div>
         </header>
         <div className="previewBody">

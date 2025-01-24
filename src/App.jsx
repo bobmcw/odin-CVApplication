@@ -6,6 +6,8 @@ function App(){
   const [values, SetValues] = useState({
     "Full name": "Your name",
     "Email": "",
+    "Phone": "",
+    "Location": "",
   });
     return(
       <div className="app">

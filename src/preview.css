@@ -12,11 +12,13 @@ header{
     background-color: #0B2545;
 }
 h1,.headerItems{
-    color: #eef4ed
+    color: #eef4ed;
 }
 header > .headerItems{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
 }
 .previewBody{
     padding: 5%;
