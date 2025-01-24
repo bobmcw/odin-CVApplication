@@ -1,12 +1,19 @@
 import './preview.css'
 import './cvItem'
 import CvItem from './cvItem';
+import emailIcon from './assets/email.svg'
 function Preview({values}){
     return(
         <div className="preview">
         <header>
             <h1>{values["Full name"]}</h1>
             <div className="headerItems">
+                <p>{values["Email"] != "" ? (
+                    <span className='infoWithIcon'>
+                        <img src={emailIcon}/>
+                        {values["Email"]}
+                    </span>
+                ) : null} </p>
                 <p>item2</p>
                 <p>item3</p>
             </div>

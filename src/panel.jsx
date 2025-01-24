@@ -5,6 +5,7 @@ function Panel({setValues,values}){
         <div className="panel">
             <h1>Personal information</h1>
             <PanelSetting name="Full name" setValues={setValues} values={values}/>
+            <PanelSetting name="Email" setValues={setValues} values={values}/>
         </div>
     )
 }

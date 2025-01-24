@@ -31,3 +31,14 @@ header > .headerItems{
 .educationItems > :last-child{
     margin-bottom: 40px;
 }
+.infoWithIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.infoWithIcon > img{
+    width: 1.5rem;
+    height: 1.5rem;
+    align-self: flex-end;
+}

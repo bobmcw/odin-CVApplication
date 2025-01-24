@@ -8,7 +8,7 @@ function PanelSetting({name="", setValues, values}){
     <div className="settingContainer">
         <label htmlFor={name+"Input"}>{name}</label>
         <input type="text" id={name+"Input"} onChange={(event) => 
-            event.target.value == "" ? handleChange("Your name here") : handleChange(event.target.value)} />
+            event.target.value == "" ? handleChange("") : handleChange(event.target.value)} />
     </div>
     )
 }
