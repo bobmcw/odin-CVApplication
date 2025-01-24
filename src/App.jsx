@@ -1,5 +1,6 @@
 import Preview from './preview.jsx'
 import Panel from './panel.jsx';
+import SectionPanel from './sectionPanel.jsx';
 import { useState } from 'react';
 import './App.css'
 function App(){
@@ -9,12 +10,16 @@ function App(){
     "Phone": "",
     "Location": "",
   });
+  const [education, SetEducation] = useState([]);
     return(
       <div className="app">
-        <Panel className="panel"
-          setValues={SetValues}
-          values={values}
-         />
+        <div className="panels">
+          <Panel className="panel"
+            setValues={SetValues}
+            values={values}
+           />
+           <SectionPanel />
+        </div>
         <Preview className="preview" values={values}/>
       </div>
     )
