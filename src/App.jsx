@@ -4,10 +4,13 @@ import { useState } from 'react';
 import './App.css'
 function App(){
   const [fullName, SetFullName] = useState("Your name here");
+  const setters = {
+    "fullName": SetFullName,
+  }
     return(
       <div className="app">
         <Panel className="preview"
-          setFullName={SetFullName}
+          setters={setters}
          />
         <Preview className="panel" fullName={fullName}/>
       </div>
