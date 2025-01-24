@@ -11,11 +11,11 @@ function App(){
   });
     return(
       <div className="app">
-        <Panel className="preview"
+        <Panel className="panel"
           setValues={SetValues}
           values={values}
          />
-        <Preview className="panel" values={values}/>
+        <Preview className="preview" values={values}/>
       </div>
     )
 }
