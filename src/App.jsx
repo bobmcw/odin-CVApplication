@@ -20,7 +20,7 @@ function App(){
            />
            <EducationPanel  values={education} setValues={SetEducation} />
         </div>
-        <Preview className="preview" values={values}/>
+        <Preview className="preview" values={values} education={education}/>
       </div>
     )
 }
