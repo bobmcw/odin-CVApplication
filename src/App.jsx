@@ -18,7 +18,7 @@ function App(){
             setValues={SetValues}
             values={values}
            />
-           <EducationPanel />
+           <EducationPanel  values={education} setValues={SetEducation} />
         </div>
         <Preview className="preview" values={values}/>
       </div>
