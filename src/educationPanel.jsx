@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PanelSetting from "./panelSetting";
 import trashIcon from "./assets/delete.svg"
+import "./educationPanel.css"
 function EducationPanel({ values = [], setValues }) {
   const [edit, setEdit] = useState(false);
   const [education, setEducation] = useState({
@@ -28,6 +29,13 @@ function EducationPanel({ values = [], setValues }) {
   }
   function handleSet(educationItem) {
     setValues([...values, educationItem]);
+    setEducation({
+    school: "",
+    degree: "",
+    "start date": "",
+    "end date": "",
+    location: "",
+  })
     setEdit(false);
   }
   return (

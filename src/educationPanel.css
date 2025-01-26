@@ -1,0 +1,9 @@
+.educationItem{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.educationItem > img{
+    justify-self: flex-end;
+    fill: black;
+}
