@@ -12,7 +12,7 @@ function PanelSetting({name="", setValues, values}){
     return(
     <div className="settingContainer">
         <label htmlFor={name+"Input"}>{name}</label>
-        <input type="text" id={name+"Input"} onChange={(event) => 
+        <input type="text" value={values[name]} id={name+"Input"} onChange={(event) => 
             event.target.value == "" ? handleChange("") : handleChange(event.target.value)} />
     </div>
     )
