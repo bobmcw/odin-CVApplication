@@ -26,7 +26,7 @@ function ExperiencePanel({ values = [], setValues }) {
                 src={trashIcon}
                 alt="delete"
                 onClick={() =>
-                  setValues(values.filter((a) => a.school != value.school))
+                  setValues(values.filter((a) => a.key != value.key))
                 }
               />
               <img
