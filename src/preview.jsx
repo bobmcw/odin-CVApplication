@@ -34,7 +34,7 @@ function Preview({values, education=[], experience=[]}){
             <h2>Education</h2>
             <div className="educationItems">
                 {education.map((educationItem) => {
-                    return <CvItem key={educationItem["school"]} name={educationItem["school"]} startDate={educationItem["start date"]} endDate={educationItem["end date"]} position={educationItem["degree"]} locationN={educationItem["location"]} />
+                    return <CvItem key={educationItem.key} name={educationItem["school"]} startDate={educationItem["start date"]} endDate={educationItem["end date"]} position={educationItem["degree"]} locationN={educationItem["location"]} />
                 })}
                 <CvItem name="PJATK" startDate="01.10.2024" endDate="present" position="Computer Science" locationN="Warsaw" />
                 <CvItem name="PJATK" startDate="01.10.2024" endDate="present" position="Computer Science" locationN="Warsaw" description="hello" />
