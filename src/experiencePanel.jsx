@@ -78,6 +78,7 @@ function ExperiencePanel({ values = [], setValues }) {
       "end date": "",
       location: "",
       description: "",
+      key: crypto.randomUUID()
     });
     setEdit(false);
   }
