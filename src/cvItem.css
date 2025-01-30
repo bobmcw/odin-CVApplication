@@ -5,9 +5,12 @@
 .cvItem{
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    width: 100%;
     margin-bottom: 10px;
 }
 .right > :first-child{
     font-weight: bold;
+}
+.right{
+    margin-left: 10%;
 }
