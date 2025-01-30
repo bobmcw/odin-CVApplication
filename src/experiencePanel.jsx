@@ -53,7 +53,22 @@ function ExperiencePanel({ values = [], setValues }) {
     setEdit(true);
   }
   function handleSet(experienceItem) {
-    setValues([...values, experienceItem]);
+    let newItem = true
+    const newItems = values.map((item)=>{
+        if(item["company name"] == experienceItem["company name"]){
+            newItem = false
+            return experienceItem
+        }
+        else{
+            return item
+        }
+    })
+    if(newItem){
+        setValues([...values, experienceItem]);
+    }
+    else{
+        setValues(newItems)
+    }
     setExperience({
       "company name": "",
       position: "",
