@@ -1,0 +1,4 @@
+.experienceItem{
+    display: flex;
+    flex-direction: row;
+}
