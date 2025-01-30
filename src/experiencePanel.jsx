@@ -12,6 +12,7 @@ function ExperiencePanel({ values = [], setValues }) {
     "end date": "",
     location: "",
     description: "",
+    key: crypto.randomUUID()
   });
   if (!edit) {
     return (
@@ -19,7 +20,7 @@ function ExperiencePanel({ values = [], setValues }) {
         <h1>Experience</h1>
         {values.map((value) => {
           return (
-            <div className="experienceItem" key={value["company name"]}>
+            <div className="experienceItem" key={value.key}>
               <h2>{value["company name"]}</h2>
               <img
                 src={trashIcon}
@@ -49,13 +50,14 @@ function ExperiencePanel({ values = [], setValues }) {
       "end date": value["end date"],
       "location": value["location"],
       "description": value["description"],
+      key: value.key
     });
     setEdit(true);
   }
   function handleSet(experienceItem) {
     let newItem = true
     const newItems = values.map((item)=>{
-        if(item["company name"] == experienceItem["company name"]){
+        if(item.key == experienceItem.key){
             newItem = false
             return experienceItem
         }
