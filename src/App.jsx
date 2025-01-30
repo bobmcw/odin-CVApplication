@@ -6,7 +6,7 @@ import './App.css'
 import ExperiencePanel from './experiencePanel.jsx';
 function App(){
   const [values, SetValues] = useState({
-    "Full name": "Your name",
+    "Full name": "",
     "Email": "",
     "Phone": "",
     "Location": "",

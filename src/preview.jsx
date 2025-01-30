@@ -36,15 +36,12 @@ function Preview({values, education=[], experience=[]}){
                 {education.map((educationItem) => {
                     return <CvItem key={educationItem.key} name={educationItem["school"]} startDate={educationItem["start date"]} endDate={educationItem["end date"]} position={educationItem["degree"]} locationN={educationItem["location"]} />
                 })}
-                <CvItem name="PJATK" startDate="01.10.2024" endDate="present" position="Computer Science" locationN="Warsaw" />
-                <CvItem name="PJATK" startDate="01.10.2024" endDate="present" position="Computer Science" locationN="Warsaw" description="hello" />
             </div>
             <h2>Experience</h2>
                 {experience.map((experienceItem) => {
                     return <CvItem key={experienceItem.key} name={experienceItem["company name"]} startDate={experienceItem["start date"]} endDate={experienceItem["end date"]} position={experienceItem["position"]} locationN={experienceItem["location"]} description={experienceItem["description"]} />
                 })}
             <div className="educationItems">
-                <CvItem name="Work" startDate="01.10.2024" endDate="present" position="Junior rust programmer" locationN="Warsaw, Poland" description="lorem ipsum" />
             </div>
         </div>
         </div>
